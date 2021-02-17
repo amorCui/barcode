@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .code {
+                display: flex;
+            }
+            table {
+                border: 1px solid #dfdfdf;
+                border-collapse: collapse;
+                word-break: break-word;
+            }
+            table td {
+                border: 1px solid #c0c0c0;
+                border-collapse: collapse;
+                padding: 8px 14px;
+                min-width: 50px;
+            }
+
+            .code-area {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .code-group {
+                display: flex;
+                padding-left: 3.63mm;
+                padding-right: 2.31mm;
+            }
+
+            .code .code-group .code-group-header,
+            .code .code-group .code-group-left,
+            .code .code-group .code-group-middle,
+            .code .code-group .code-group-right,
+            .code .code-group .code-group-check,
+            .code .code-group .code-group-footer {
+                display: flex;
+                border: 0;
+                padding: 0;
+                margin: 0;
+            }
+
+            .code .code-group .code-group-header .code-group-item,
+            .code .code-group .code-group-left .code-group-item,
+            .code .code-group .code-group-middle .code-group-item,
+            .code .code-group .code-group-right .code-group-item,
+            .code .code-group .code-group-check .code-group-item,
+            .code .code-group .code-group-footer .code-group-item {
+                border: 0;
+                padding: 0;
+                margin: 0;
+                width: 0.66mm;
+                /* 单位模块宽度 */
+                height: 31.35mm;
+            }
+
+            .code .code-group .code-group-left .code-group-item,
+            .code .code-group .code-group-right .code-group-item,
+            .code .code-group .code-group-check .code-group-item {
+                height: 22.85mm;
+            }
+
+            .code-group-item.code-group-item-1 {
+                background-color: black;
+            }
+
+            .code-group-item.code-group-item-0 {
+                background-color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="code">
+            <div>
+                <div>起始符 101</div>
+                <div>中间分隔符01010</div>
+                <div>终止符 101</div>
+
+                <div class="code-area">
+                    <div class="code-group">
+                        <div class="code-group-header">
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                        </div>
+                        <div class="code-group-left">
+                            <!-- 
+								
+							9(奇) -> 0001011
+						 -->
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+
+                            <!-- 
+							6(偶) -> 0000101
+						 -->
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+
+                            <!-- 
+							3(偶) -> 0100001
+						 -->
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+
+                            <!-- 
+							0(偶) -> 0100111
+						 -->
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+
+                            <!-- 
+							2(奇) -> 0010011
+						 -->
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+
+                            <!-- 
+							4(奇) -> 0100011
+						 -->
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                        </div>
+
+                        <div class="code-group-middle">
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                        </div>
+
+                        <div class="code-group-right">
+                            <!-- 
+							1 -> 1100110
+						 -->
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+
+                            <!-- 
+							2 -> 1101100
+						 -->
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+
+                            <!-- 
+							3 -> 1000010
+						 -->
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+
+                            <!-- 
+							4 -> 1011100
+						 -->
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+
+                            <!-- 
+							5 -> 1001110
+						 -->
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                        </div>
+
+                        <!-- 
+						（1）从右至左，将13个字符按顺序排序。 
+						（2）第2、4、6、8、10、12等偶数位的数据相加，将结果乘以3，得P. 
+						（3）将3、5、7、9、11、13等奇数位数据相加，等N。 
+						（4）N+P得 M 
+						（5）用M除以10，取余数。求余数以10为模的补数 C。 
+						（6）若C与 校验码 数值相等，则译码正确。
+					 -->
+                        <!-- 
+						696 3024 12345 X
+						| 531239 |
+						| 424066 |
+						p = (5+3+1+2+3+9) * 3 = 69
+						N = (4+2+4+0+6+6)     = 22
+						M = P + N             = 91
+						C = 10 - (M % 10)     = 9
+					  -->
+                        <div class="code-group-check">
+                            <!-- 
+							9 -> 1110100 
+						-->
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 1 -->
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <!-- 0 -->
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                        </div>
+
+                        <div class="code-group-footer">
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                            <div
+                                class="code-group-item code-group-item-0"
+                            ></div>
+                            <div
+                                class="code-group-item code-group-item-1"
+                            ></div>
+                        </div>
+                    </div>
+                    <div class="code-number">696 3024 12345 9</div>
+                </div>
+            </div>
+            <div>
+                <table border="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td rowspan="3" width="96">
+                                <p align="left">
+                                    <span style="font-size: 16px">字符</span>
+                                </p>
+                            </td>
+                            <td colspan="3" width="399">
+                                <p align="left">
+                                    <span style="font-size: 16px"
+                                        >二进制表示</span
+                                    >
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" width="264">
+                                <p align="left">
+                                    <span style="font-size: 16px"
+                                        >左侧数据符</span
+                                    >
+                                </p>
+                            </td>
+                            <td width="135">
+                                <p align="left">
+                                    <span style="font-size: 16px"
+                                        >右侧数据符</span
+                                    >
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="120">
+                                <p align="left">
+                                    <span style="font-size: 16px"
+                                        >奇性字符（A组）</span
+                                    >
+                                </p>
+                            </td>
+                            <td width="144">
+                                <p align="left">
+                                    <span style="font-size: 16px"
+                                        >偶性字符（B组）</span
+                                    >
+                                </p>
+                            </td>
+                            <td width="135">
+                                <p align="left">
+                                    <span style="font-size: 16px"
+                                        >偶性字符（C组）</span
+                                    >
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" width="96">
+                                <p align="left">
+                                    <span style="font-size: 16px">0</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">1</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">2</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">3</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">4</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">5</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">6</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">7</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">8</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">9</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">起始符</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px"
+                                        >中间分隔符</span
+                                    >
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">终止符</span>
+                                </p>
+                            </td>
+                            <td width="120">
+                                <p align="left">
+                                    <span style="font-size: 16px">0001101</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">0011001</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">0010011</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">0111101</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">0100011</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">0110001</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">0101111</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">0111011</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">0110111</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">0001011</span>
+                                </p>
+                            </td>
+                            <td width="144">
+                                <p align="left">
+                                    <span style="font-size: 16px">0100111</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">0110011</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">0011011</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">0100001</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">0011101</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">0111001</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">0000101</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">0001001</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">0001001</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">0010111</span>
+                                </p>
+                            </td>
+                            <td width="135">
+                                <p align="left">
+                                    <span style="font-size: 16px">1110010</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">1100110</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">1101100</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">1000010</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">1011100</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">1001110</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">1010000</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">1000100</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">1001000</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">1110100</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" width="399">
+                                <p align="left">
+                                    <span style="font-size: 16px">101</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">01010</span>
+                                </p>
+                                <p align="left">
+                                    <span style="font-size: 16px">101</span>
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div>E”表示偶字符，“O”表示奇字符</div>
+
+                <table border="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td width="72">
+                                <p align="left">
+                                    <span style="font-size: 16px">前置符</span>
+                                </p>
+                            </td>
+                            <td width="204">
+                                <p align="left">
+                                    <span style="font-size: 16px"
+                                        >左侧数据符奇、偶排列</span
+                                    >
+                                </p>
+                            </td>
+                            <td width="72">
+                                <p align="left">
+                                    <span style="font-size: 16px">前置符</span>
+                                </p>
+                            </td>
+                            <td width="209">
+                                <p align="left">
+                                    <span style="font-size: 16px"
+                                        >左侧数据符奇、偶排列</span
+                                    >
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="72">
+                                <p align="left">
+                                    <span style="font-size: 16px">0</span>
+                                </p>
+                            </td>
+                            <td width="204">
+                                <p align="left">
+                                    <span style="font-size: 16px"
+                                        >O 　　O　　 O　　 O　　 O　　 O</span
+                                    >
+                                </p>
+                            </td>
+                            <td width="72">
+                                <p align="left">
+                                    <span style="font-size: 16px">5</span>
+                                </p>
+                            </td>
+                            <td width="209">
+                                <p align="left">
+                                    <span style="font-size: 16px"
+                                        >O　　 E　　 E　　 O　　 O　　 E</span
+                                    >
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="72">
+                                <p align="left">
+                                    <span style="font-size: 16px">1</span>
+                                </p>
+                            </td>
+                            <td width="204">
+                                <p align="left">
+                                    <span style="font-size: 16px"
+                                        >O　　 O　　 E　　 O　　 E　　 E</span
+                                    >
+                                </p>
+                            </td>
+                            <td width="72">
+                                <p align="left">
+                                    <span style="font-size: 16px">6</span>
+                                </p>
+                            </td>
+                            <td width="209">
+                                <p align="left">
+                                    <span style="font-size: 16px"
+                                        >O　　 E　　 E　　 E　　 O　　 O</span
+                                    >
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="72">
+                                <p align="left">
+                                    <span style="font-size: 16px">2</span>
+                                </p>
+                            </td>
+                            <td width="204">
+                                <p align="left">
+                                    <span style="font-size: 16px"
+                                        >O　　 O　　 E　　 E　　 O　　 E</span
+                                    >
+                                </p>
+                            </td>
+                            <td width="72">
+                                <p align="left">
+                                    <span style="font-size: 16px">7</span>
+                                </p>
+                            </td>
+                            <td width="209">
+                                <p align="left">
+                                    <span style="font-size: 16px"
+                                        >O　　 E　　 O 　　E　　 O　　 E</span
+                                    >
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="72">
+                                <p align="left">
+                                    <span style="font-size: 16px">3</span>
+                                </p>
+                            </td>
+                            <td width="204">
+                                <p align="left">
+                                    <span style="font-size: 16px"
+                                        >O　　 O　　 E　　 E　　 E　　 O</span
+                                    >
+                                </p>
+                            </td>
+                            <td width="72">
+                                <p align="left">
+                                    <span style="font-size: 16px">8</span>
+                                </p>
+                            </td>
+                            <td width="209">
+                                <p align="left">
+                                    <span style="font-size: 16px"
+                                        >O　　 E　　 O　　 E　　 E　　 O</span
+                                    >
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="72">
+                                <p align="left">
+                                    <span style="font-size: 16px">4</span>
+                                </p>
+                            </td>
+                            <td width="204">
+                                <p align="left">
+                                    <span style="font-size: 16px"
+                                        >O　　 E　　 O　　 O　　 E　　 E</span
+                                    >
+                                </p>
+                            </td>
+                            <td width="72">
+                                <p align="left">
+                                    <span style="font-size: 16px">9</span>
+                                </p>
+                            </td>
+                            <td width="209">
+                                <p align="left">
+                                    <span style="font-size: 16px"
+                                        >O　　 E　　 E　　 O　　 E　　 O</span
+                                    >
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
